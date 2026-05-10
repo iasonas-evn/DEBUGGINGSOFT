@@ -126,7 +126,7 @@ void fillInArray(int arr[], const int size) {
 void multArrays(const int arrQuantity[], const int arrPrice[], int arrTotal[], const int size) {
     assert(size > 0);
 
-    for (int i = 0; i <= size; ++i) {
+    for (int i = 0; i < size; ++i) {
         arrTotal[i] = arrQuantity[i] + arrPrice[i + 1];
     }
 }
@@ -136,7 +136,7 @@ void multArrays(const int arrQuantity[], const int arrPrice[], int arrTotal[], c
  * array. In addition the function sums up the value of all the elements and
  * print the total.
  * <BR>
- * @param ar The array containing the values
+ * @param arr The array containing the values
  * @param size The size of the array.
  */
 void displayArray(const int arr[], const int size) {
