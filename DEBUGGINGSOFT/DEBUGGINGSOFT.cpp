@@ -154,8 +154,15 @@ void displayArray(const int arr[], const int size) {
     cout << "\nThe total is: " << sum;
 }
 
-// Sums the odd numbers in the array and returns the result
-int sumOddArray(const int arr[], const int size) {
+
+/**
+ * <code>sumOddArray</code> sums all odd numbers found in the array and
+ * returns the result.
+ * <BR>
+ * @param arr  The array to examine.
+ * @param size The number of elements in the array.
+ * @return     The sum of all odd-valued elements; 0 if none exist.
+ */int sumOddArray(const int arr[], const int size) {
         assert(size > 0);
         int sum = 0;
         for (int i = 0; i < size; ++i) {
