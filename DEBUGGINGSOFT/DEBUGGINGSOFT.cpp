@@ -190,7 +190,8 @@ void displayArray(const int arr[], const int size) {
  * @param arr  The array to examine.
  * @param size The number of elements in the array.
  * @return     The sum of all odd valued elements and 0 if none exist.
- */int sumOddArray(const int arr[], const int size) {
+ */
+int sumOddArray(const int arr[], const int size) {
         assert(size > 0);
         int sum = 0;
         for (int i = 0; i < size; ++i) {
