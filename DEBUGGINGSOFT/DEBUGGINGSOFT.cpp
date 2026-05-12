@@ -95,10 +95,10 @@ int printMenu() {
         cout << "Enter choice" << endl;
         cin >> choice;
 
-        if (choice < 0 || choice > 4) {
+        if (choice < 0 || choice > 7) {
             cout << "\nWrong choice, try again.";
         }
-    } while (choice < 0 || choice > 5);
+    } while (choice < 0 || choice > 7);
     return choice;
 }
 
