@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <cassert>
+#include <cstdlib>
 using namespace std;
 
 // Function prototypes
@@ -94,6 +95,10 @@ int main() {
             assert(false);
         }
     } while (choice != 0); 
+    srand(time(0));
+    for (int i = 0; i < SIZE; ++i) {
+        price[i] = 10 + rand() % 41;
+    }
     // With:
 
   
@@ -159,7 +164,7 @@ void fillInArray(int arr[], const int size) {
 void multArrays(const int arrQuantity[], const int arrPrice[], int arrTotal[], const int size) {
     assert(size > 0);
     for (int i = 0; i < size; ++i) {
-        arrTotal[i] = arrQuantity[i] + arrPrice[i + 1];
+        arrTotal[i] = arrQuantity[i] * (arrPrice[i] * (1 + VAT));
     }
 }
 
