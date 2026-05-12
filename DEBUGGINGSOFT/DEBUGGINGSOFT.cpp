@@ -79,7 +79,7 @@ int main() {
  * @return Returns the menu choice
  */
 int printMenu() {
-    int choice;
+    int choice; 
 
     do {
         //New menu with the 4 new options
