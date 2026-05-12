@@ -20,7 +20,7 @@ using namespace std;
 
 // Function prototypes
 int printMenu();
-void fillInArray(int[], const int);
+void fillInArray(const int[], const int);
 void multArrays(const int[], const int[], int[], const int);
 void displayArray(const int[], const int);
 int sumOddArray(const int[], const int);
