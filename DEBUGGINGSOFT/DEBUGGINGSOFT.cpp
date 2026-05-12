@@ -64,7 +64,7 @@ int main() {
             // No code needed
             break;
         default:
-            assert(true);
+            assert(false);
         }
     } while (choice != 0);
 
@@ -82,13 +82,17 @@ int printMenu() {
     int choice;
 
     do {
+        //New menu with the 4 new options
         cout << "\n == MENU ==";
         cout << "\n1) Enter quantity";
         cout << "\n2) Calculate total";
         cout << "\n3) Print total";
+        cout << "\n4) Sum of odd elements in total";
+        cout << "\n5) Check if all elements are positive";
+        cout << "\n6) Average of odd elements in total";
+        cout << "\n7) Revert total array";
         cout << "\n0) Exit";
-
-        cout << "\nEnter the choice: ";
+        cout << "Enter choice" << endl;
         cin >> choice;
 
         if (choice < 0 || choice > 4) {
@@ -152,8 +156,13 @@ void displayArray(const int arr[], const int size) {
 
 // Sums the odd numbers in the array and returns the result
 int sumOddArray(const int arr[], const int size) {
-    //@TODO: You will need to complete this. Including making the appropriate comment header
-    return 0;
+        assert(size > 0);
+        int sum = 0;
+        for (int i = 0; i < size; ++i) {
+            if (arr[i] % 2 != 0)
+                sum += arr[i];
+        }
+        return sum;
 }
 
 // If all the values in the array are positive return true
