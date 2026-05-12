@@ -48,17 +48,44 @@ int main() {
 
         switch (choice) {
             // Enter quantity
+
         case 1:
             fillInArray(quantity, SIZE);
+            cout << endl;
             break;
             // Calculate total
         case 2:
             multArrays(quantity, price, total, SIZE);
+            cout << endl;
             break;
             // Print total
         case 3:
             displayArray(total, SIZE);
+            cout << endl;
             break;
+        case 4:
+            cout << "Sum of odd numbers: " << sumOddArray(total, SIZE);
+            cout << endl;
+            break;
+            case 5:
+                if (isAllPositive(total, SIZE))
+                    cout << "All values are positive."<<endl;
+                else
+                    cout << "Not all values are positive."<<endl;
+                break;
+               
+                case 6:
+                    int avg = 0;
+                    if (avgOddArray(total, SIZE, avg))
+                        cout << "\nAverage of odd numbers: " << avg<<endl;
+                    else
+                        cout << "No odd numbers found in the array."<<endl;
+                    break;
+                case 7: int avg = 0;
+                    revertNumbers(total, SIZE);
+                    cout << "Array reverted."<<endl;
+                    displayArray(total, SIZE);
+                    break;
             // Exit
         case 0:
             // No code needed
