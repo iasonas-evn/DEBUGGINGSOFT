@@ -179,7 +179,7 @@ void displayArray(const int arr[], const int size) {
  * @param arr  The array to examine.
  * @param size The number of elements in the array.
  * @return     Returns <code>true</code> if all elements are positive
- *             <code>false</code> otherwise.
+ * <code>false</code> otherwise.
  */
 bool isAllPositive(const int arr[], const int size) {
     assert(size > 0);
@@ -190,11 +190,31 @@ bool isAllPositive(const int arr[], const int size) {
     return true;
 }
 
-// Finds the average of all the odd numbers in the array and stores this in the last argument
-// returns false if there are no odd numbers in the array, true otherwise.
+/**
+ * <code>avgOddArray</code> finds the integer average of all odd values
+ * in the array and stores the result in <code>avgOdd</code>.
+ * <BR>
+ * @param arr    The array we want to examine.
+ * @param size   The number of elements in the array.
+ * @param avgOdd parameter wiht the average
+ * @return       Returns <code>true</code> if at least one odd element was found
+ *               and the average has been stored <code>false</code> if the
+ *               array contains only even numbers.
+ */
 bool avgOddArray(const int arr[], const int size, int& avgOdd) {
-    //@TODO: You will need to complete this. Including making the appropriate comment header
-    return false;
+    assert(size > 0);
+    int sum = 0, count = 0;
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] % 2 != 0) {
+            sum += arr[i];
+            count++;
+        }
+    }
+    if (count == 0){
+        return false;
+        }
+    avgOdd = sum / count;
+    return true;
 }
 
 // You revert the numbers (in place) of the array. I.e. if your array have the values [1, 3, 4, 7, 11] then
