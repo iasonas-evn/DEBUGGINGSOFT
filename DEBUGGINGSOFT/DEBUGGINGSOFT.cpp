@@ -117,20 +117,20 @@ int printMenu() {
 
     do {
         //New menu with the 4 new options
-        cout << "\n == MENU ==";
-        cout << "\n1) Enter quantity";
-        cout << "\n2) Calculate total";
-        cout << "\n3) Print total";
-        cout << "\n4) Sum of odd elements in total";
-        cout << "\n5) Check if all elements are positive";
-        cout << "\n6) Average of odd elements in total";
-        cout << "\n7) Revert total array";
-        cout << "\n0) Exit";
+        cout << " == MENU ==";
+        cout << "1) Enter quantity";
+        cout << "2) Calculate total";
+        cout << "3) Print total";
+        cout << "4) Sum of odd elements in total";
+        cout << "5) Check if all elements are positive";
+        cout << "6) Average of odd elements in total";
+        cout << "7) Revert total array";
+        cout << "0) Exit";
         cout << "Enter choice" << endl;
         cin >> choice;
 
         if (choice < 0 || choice > 7) {
-            cout << "\nWrong choice, try again.";
+            cout << "Wrong choice, try again.";
         }
     } while (choice < 0 || choice > 7);
     return choice;
@@ -180,11 +180,11 @@ void displayArray(const int arr[], const int size) {
     int sum = 0;
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nValue at " << i << ": " << arr[i];
+        cout << "Value at " << i << ": " << arr[i];
         sum += arr[i];
     }
 
-    cout << "\nThe total is: " << sum;
+    cout << "The total is: " << sum;
 }
 
 
