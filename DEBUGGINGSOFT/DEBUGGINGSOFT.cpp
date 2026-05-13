@@ -147,7 +147,7 @@ void fillInArray(int arr[], const int size) {
     assert(size > 0);
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nEnter an element for the array at " << i << ": ";
+        cout << "Enter an element for the array at " << i << ": ";
         cin >> arr[i];
     }
 }
