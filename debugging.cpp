@@ -108,7 +108,7 @@ int main() {
 
 /**
  * <code>printMenu</code> shows a menu and accepts the choice
- * from the user which is returned.
+ * from the user.
  * <BR>
  * @return Returns the menu choice
  */
@@ -117,15 +117,15 @@ int printMenu() {
 
     do {
         //New menu with the 4 new options
-        cout << "\n == MENU ==";
-        cout << "\n1) Enter quantity";
-        cout << "\n2) Calculate total";
-        cout << "\n3) Print total";
-        cout << "\n4) Sum of odd elements in total";
-        cout << "\n5) Check if all elements are positive";
-        cout << "\n6) Average of odd elements in total";
-        cout << "\n7) Revert total array";
-        cout << "\n0) Exit";
+        cout << " == MENU =="<<endl;
+        cout << "1) Enter quantity" < endl;
+        cout << "2) Calculate total" < endl;
+        cout << "3) Print total" < endl;
+        cout << "4) Sum of odd elements in total" < endl;
+        cout << "5) Check if all elements are positive" < endl;
+        cout << "6) Average of odd elements in total" < endl;
+        cout << "7) Revert total array" < endl;
+        cout << "0) Exit" < endl;
         cout << "Enter choice" << endl;
         cin >> choice;
 
@@ -147,7 +147,7 @@ void fillInArray(int arr[], const int size) {
     assert(size > 0);
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nEnter an element for the array at " << i << ": ";
+        cout << "Enter an element for the array at " << i << ": "<<endl;
         cin >> arr[i];
     }
 }
@@ -181,11 +181,11 @@ void displayArray(const int arr[], const int size) {
     int sum = 0;
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nValue at " << i << ": " << arr[i];
+        cout << "Value at " << i << ": " << arr[i];
         sum += arr[i];
     }
 
-    cout << "\nThe total is: " << sum;
+    cout << "The total is: " << sum;
 }
 
 
@@ -195,7 +195,7 @@ void displayArray(const int arr[], const int size) {
  * <BR>
  * @param arr  The array to examine.
  * @param size The number of elements in the array.
- * @return     The sum of all odd valued elements and 0 if none exist.
+ * @return     The sum of all odd values and returns 0 if none exist.
  */
 int sumOddArray(const int arr[], const int size) {
         assert(size > 0);
