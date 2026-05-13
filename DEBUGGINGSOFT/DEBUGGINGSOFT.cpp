@@ -101,7 +101,7 @@ int main() {
 
 /**
  * <code>printMenu</code> shows a menu and accepts the choice
- * from the user which is returned.
+ * from the user
  * <BR>
  * @return Returns the menu choice
  */
@@ -140,15 +140,14 @@ void fillInArray(int arr[], const int size) {
     assert(size > 0);
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nEnter an element for the array at " << i << ": ";
+        cout << "Enter an element for the array at " << i << ": "<<endl;
         cin >> arr[i];
     }
 }
 
 /**
  * <code>multArrays</code> multiplies the value of elements of the source array
- * to the corresponding value at the destination array. NOTE: precondition
- * is that the arrays have the same size.
+ * to the corresponding value at the destination array.
  * <BR>
  * @param arrSource The array containing the destination elements.
  * @param arrDest The array containing the source elements.
@@ -174,11 +173,11 @@ void displayArray(const int arr[], const int size) {
     int sum = 0;
 
     for (int i = 0; i < size; ++i) {
-        cout << "\nValue at " << i << ": " << arr[i];
+        cout << "Value at " << i << ": " << arr[i];
         sum += arr[i];
     }
 
-    cout << "\nThe total is: " << sum;
+    cout << "The total is: " << sum<<endl;
 }
 
 
